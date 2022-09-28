@@ -47,8 +47,8 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 groupId 'com.shekhar.multiview'
-                artifactId 'multiview'
-                version '0.0.1'
+                artifactId 'MultiView'
+                version '1.0.0'
                 from components.release
             }
         }
