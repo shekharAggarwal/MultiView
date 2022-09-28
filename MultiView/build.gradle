@@ -28,6 +28,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+        useIR = true
     }
     buildFeatures {
         compose true
@@ -46,10 +47,11 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                groupId 'com.shekhar.multiview'
-                artifactId 'MultiView'
-                version '1.0.0'
                 from components.release
+
+                groupId 'com.shekhar.multiview'
+                artifactId 'multiview'
+                version '1.0.0'
             }
         }
     }
