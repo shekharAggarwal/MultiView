@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.library'
-    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android'
     id 'maven-publish'
 }
 
@@ -11,7 +11,8 @@ android {
     defaultConfig {
         minSdk 21
         targetSdk 33
-
+        versionCode 1
+        versionName "1.0.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -49,7 +50,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.shekharAggarwal'
+                groupId = 'com.github.shekharaggarwal'
                 artifactId = 'multiview'
                 version = '1.0.0'
             }
