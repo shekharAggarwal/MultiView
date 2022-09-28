@@ -51,7 +51,7 @@ afterEvaluate {
                 from components.release
 
                 groupId = 'com.github.shekharaggarwal'
-                artifactId = 'multiview'
+                artifactId = 'MultiView'
                 version = '1.0.0'
             }
         }
