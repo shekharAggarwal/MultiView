@@ -49,7 +49,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId 'com.shekhar.multiview'
+                groupId 'com.github.shekharAggarwal'
                 artifactId 'multiview'
                 version '1.0.0'
             }
